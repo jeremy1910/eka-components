@@ -2,15 +2,14 @@ import React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { getTheme } from 'eka-styles';
-import { ThemeName } from 'eka-styles';
-import { Button } from '../src/index';
+import { EkaText } from '../src/index';
 
 export default {
-  title: 'Eka-Components/Button',
-  component: Button,
-} as ComponentMeta<typeof Button>;
+  title: 'Eka-Components/EkaText',
+  component: EkaText,
+} as ComponentMeta<typeof EkaText>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof EkaText> = (args) => <EkaText {...args} />;
 
 export const BaseTheme = Template.bind({});
 BaseTheme.decorators = [
@@ -23,7 +22,7 @@ BaseTheme.decorators = [
 ];
 
 BaseTheme.args = {
-  label: 'Button',
+    children: 'Here my text'
 };
 
 export const DarkTheme = Template.bind({});
@@ -37,5 +36,5 @@ DarkTheme.decorators = [
 ];
 
 DarkTheme.args = {
-  label: 'Button',
+    children: 'Here my text'
 };
