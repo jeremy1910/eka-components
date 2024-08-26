@@ -2,6 +2,8 @@ import React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { getTheme } from 'eka-styles';
 
+import 'eka-styles/dist/common/styles/reset.css';
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {

@@ -13,6 +13,7 @@ module.exports = {
             'react': path.resolve(__dirname, './node_modules/react'),
             'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
             'styled-components': path.resolve(__dirname, './node_modules/styled-components'),
+            '@tanstack/react-query': path.resolve(__dirname, './node_modules/@tanstack/react-query'),
         }
     },
     module: {
@@ -42,6 +43,12 @@ module.exports = {
             commonjs2: 'styled-components',
             amd: 'styled-components',
             root: 'styled'
+        },
+        "@tanstack/react-query": {
+            commonjs: '@tanstack/react-query',
+            commonjs2: '@tanstack/react-query',
+            amd: '@tanstack/react-query',
+            root: 'react-query'
         }
     }
 };

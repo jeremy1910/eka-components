@@ -1,6 +1,7 @@
-import React, { ReactNode } from 'react';
-import { EkaCard, EkaText } from '../../../index';
-import { KPIWrapper, TitleWrapper } from './style';
+import React from 'react';
+import { EkaCard } from '../../../index';
+import { KPIWrapper } from './style';
+import { TitleWrapper } from '../styles';
 
 interface EkaKPICardProps {
     title: string;
@@ -8,7 +9,6 @@ interface EkaKPICardProps {
 }
 
 export const EkaKPICard: React.FC<EkaKPICardProps> = ({ title, kpi }) => {
-  console.log({title, kpi})
   return (
     <EkaCard>
       <TitleWrapper>{title}</TitleWrapper>
