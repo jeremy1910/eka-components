@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/index.tsx',
@@ -50,5 +51,12 @@ module.exports = {
             amd: '@tanstack/react-query',
             root: 'react-query'
         }
-    }
+    },
+    plugins: [
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'src/assets', to: 'assets' }
+            ]
+        })
+    ]
 };

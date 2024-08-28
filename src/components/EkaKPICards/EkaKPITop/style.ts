@@ -12,9 +12,15 @@ export const ItemWrapper = styled.div`
 `;
 
 export const NameWrapper = styled.p`
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 export const TimeWrapper = styled.p`
     color: #DB3838;
     font-size: ${props => props.theme.fontSizes._16};
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;

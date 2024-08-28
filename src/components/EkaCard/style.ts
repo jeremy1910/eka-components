@@ -7,6 +7,8 @@ const Card = styled.div`
   border-radius: ${props => props.theme.spacings._16};
   box-shadow: ${props => props.theme.shadows._1};
   outline: ${props => props.theme.name === 'base' ? '1px solid #f4f4f45c' : 'none'};
+  box-sizing: border-box;
+  height: 100%;
 `;
 
 export default Card;
